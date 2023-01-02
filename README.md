@@ -279,9 +279,9 @@ I would like to thank...
 
 <!-- LICENSE -->
 
-## 📝 License <a name="license"></a>
+## 📝 License <a name="Creative Commons License" href="http://creativecommons.org/licenses/by-nc/4.0/"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [CC](./LICENSE) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
