@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
+
+/* ------------------------MOBILE VERSION-------------------------- */
+
 @media only screen and (max-width: 768px){
     body {
         background-color: #f9f9f9;
@@ -16,6 +20,7 @@
         position: relative;
         top: 0px;
         margin-bottom: 50px;
+        background-color: #f3f2f1;
     }
 
     #hamburger {
@@ -35,23 +40,169 @@
         display: none;
     }
 
-    #home span,h1 {
-        color: #fb522d;
-        font-family: 'Lato', sans-serif;
-        padding: 10px;
-        line-height: 1;
+    #description, #history {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    #home span {
+    #about-bg {
+        background-image: url(images/about-bg.png);
+        background-size: contain;
+        background-color: #f3f2f1;
+    }
+
+    #home span, #description span {
+        color: #fb522d;
+        padding: 10px;
+        line-height: 1;
         position: relative;
-        font-size: 20px;
+        font-size: 25px;
         top: 25px;
     }
 
-    #home h1 {
+    #description span {
+        top: 10px;
+    }
+
+    #home h1, #description h1 {
+        padding: 10px;
+        line-height: 1;
+        color: rgba(251, 82, 45, 1);
         font-size: 40px;
         margin: 20px 0 30px 0;
         font-weight: 800;
+    }
+
+    #home h1 {
+        -webkit-background-clip: text;
+        background-clip: var(text);
+        background-image: url(images/Gaming-bg.jpg);
+        color: rgba(251, 82, 45, 0.8);
+    }
+
+    #description h1 {
+        background-color: #f3f2f1;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    #description .separator {
+        display: none;
+    }
+
+    #description p:first-child {
+        background-color: #f9f9f9;
+        border: 1px solid #d3d3d3;
+        padding: 15px;
+        margin: 0 5% 40px 5%;
+    }
+
+    #description p {
+      color: #43403f;
+      background-color: #f3f2f1;
+      text-align: center;
+      line-height: 1.5;
+      margin: 0 15%;
+      padding-bottom: 50px;
+    }
+
+    #description a {
+        color: #272a31;
+        font-weight: bold;
+    }
+
+    #history h3 {
+        color:#43403f;
+        font-size: 20px; 
+        margin-top: 30px;
+    }
+
+    #logo-txt {
+        color: #43403f;
+        text-align: center;
+        margin: 0 10% 40px 10%;
+    }
+
+    #logo-2 {
+        border-radius: 50%;
+        width: 300px;
+        height: 300px;
+    }
+
+    #pastevents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .pastlog p, #pastevents h3 {
+        position: relative;
+        bottom: 190px;
+        color: #f9f9f9;
+        text-align: center;
+        padding: 8px;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    #pastevents h3 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .pastlog {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    #first {
+        background-image: url(images/Past-Fest-2021.jpg);    
+    }
+
+    .overlay {
+        width: 300px;
+        height: 200px;
+        padding: 0;
+        background: rgba(251, 82, 45, 0.7); 
+    }
+
+    #second {
+        background-image: url(images/Past-Fest-2022.jpg);
+        background-size: contain;
+    }
+
+    .partners {
+        display: none;
+    }
+
+    .partners.about {
+        background-color:#272a31;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0 -8px 0 -8px;
+    }
+
+    .partners.about h3 {
+        color: darkgray;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+
+    .partners.about #partner-list {
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        margin: 30px 0 50px 0;
+    }
+
+    .game-logo{
+        width: 50px;
+        height: 50px;
     }
 
     #home p {
@@ -179,15 +330,341 @@
     }
 
     footer {
-        margin-top: 50px;
+        margin: 4px 0 0 -8px;
         padding: 20px;
-        color: #d3d3d3;
-        background-color: #43403f;
+        color: #43403f;
+        text-align: center;
+        background-color: #f9f9f9;
     }
 
     footer a{
+        font-family: 'Lato', sans-serif;
         text-decoration: none;
-        color: #d3d3d3;
+        color: #43403f;
     }
 
+}
+
+/* -------------------------DESKTOP VERSION-----------------------*/
+
+@media only screen and (min-width: 768px){
+    #logo {
+        border-radius: 50%;
+        height: 70px;
+        width: 70px;
+        margin: 0 300px 0 200px;
+    }
+
+    #nav1 {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 8px 120px 8px 8px;
+        background-color: #43403f;        
+    }
+
+    #nav1 a {
+        font-family: 'Lato', sans-serif;
+        color: #f9f9f9;
+        text-decoration: none;
+    }
+
+    #nav2 {
+        display: flex;
+        align-items: center;
+        margin-top: 35px;
+        padding: 5px 0 10px 0;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: #85817f;
+        font-weight: 600;
+    }
+
+    #home {
+        background-image: url(images/mobile-bg.png);
+    }
+
+    #description, #history {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #description {
+        background-image: url(images/about-bg.png);
+        background-size: contain;
+        background-color: #f3f2f1;
+        text-align: center;
+        padding-bottom: 50px;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+    }
+
+    #home span {
+        color: #fb522d;
+        position: relative;
+        padding: 10px;
+        line-height: 1;
+        font-size: 40px;
+        top: 130px;
+        left: 200px;
+    }
+
+    #description span {
+    display: none;
+    }
+
+    #home h1, #description h1 {
+        -webkit-background-clip: text;
+        background-clip: var(text);
+        background-image: url(images/Gaming-bg.jpg);
+        color: rgba(251, 82, 45, 0.8);
+        padding: 10px;
+        line-height: 1;
+        font-size: 70px;
+        margin: 120px 350px 30px 200px;
+        font-weight: 800;
+    }
+
+    #description h1 {
+        background-color: #f3f2f1;
+    }
+
+    #description p:first-child {
+        background-color: #f9f9f9;
+        border: 1px solid #d3d3d3;
+        padding: 15px;
+        margin: 0 15% 40px 15%;
+    }
+
+    #description p {
+      color: #43403f;
+      line-height: 1.5;
+    }
+
+    #description a {
+        color: #272a31;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+
+    #home p {
+        color: #43403f;
+        background-color: #f9f9f9;
+        padding: 15px;
+        margin:-8px 600px 0 200px;
+        font-family: 'Lato', sans-serif;
+        border: 4px solid #ffffff;
+    }
+
+    #home h2 {
+        color: #43403f;
+        font-family: 'Lato', sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        margin: 40px 0 0 205px;
+    }
+
+    #home h4 {
+        color: #43403f;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        margin: 0px 0 0 205px;
+        padding-bottom: 100px;;
+    }
+
+    #about {
+        background-image: url(images/program-bg.jpg);
+        margin: 0 0 0 -7.5px;
+        display: flex;
+        flex-direction: column;
+        /* gap: 2px; */
+        align-items: center;
+        right: 0;
+    }
+
+    #about-title {
+        color: #f9f9f9;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .separator {
+        background-color: rgba(251, 82, 45, 0.7);
+        height: 2px;
+        width: 38px;
+        margin: -8px 0 30px 0;
+    }
+
+    #desktop-itinerary {
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        width: 80%;
+        margin-bottom: 100px;
+    }
+
+    .itinerary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 20%;
+        padding: 8px;
+        margin: 10px 0;     
+    }
+
+    .itinerary img{
+        width: 50px;
+        height: 50px;
+        margin: 30px 0 -10px 36%;
+    }
+
+    .itinerary h3 {
+        color: rgba(251, 82, 45, 1);
+        height: 2px;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .itinerary p {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        color: #f9f9f9;
+    }
+
+    #join-btn {
+        display: none;
+    }
+
+    #features h3 {
+        color:#43403f;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;        
+    }
+
+    #more-btn {
+        display: none;
+    }
+
+    .partners.about {
+        display: none;
+    }
+
+    .partners {
+        background-color:#272a31;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .partners h3 {
+        color: darkgray;
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+    }
+
+    #partner-list {
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        margin: 30px 0 50px 0;
+    }
+
+    .game-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    #history h3 {
+        color:#43403f;
+        font-size: 20px; 
+        margin-top: 50px;
+    }
+
+    #logo-txt {
+        color: #43403f;
+        text-align: center;
+        margin: 0 30% 40px 30%;
+    }
+
+    #logo-2 {
+        border-radius: 50%;
+    }
+
+    #pastevents {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #pastevents h3, .pastlog p{
+        position: relative;
+        bottom: 190px;
+        color: #f9f9f9;
+        text-align: center;
+        padding: 8px;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    #pastevents h3 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .pastlog {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 50px;
+    }
+
+    #first {
+        background-image: url(images/Past-Fest-2021.jpg);    
+    }
+
+    .overlay {
+        width: 300px;
+        height: 200px;
+        padding: 0;
+        background: rgba(251, 82, 45, 0.7); 
+    }
+
+    #second {
+        background-image: url(images/Past-Fest-2022.jpg);
+        background-size: contain;
+    }
+
+    footer {
+        padding: 50px 20px;
+        background-color: lightgray;
+        border: 1px solid rgba(211, 211, 211, 0.8);
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    footer a{
+        color:#272a31;
+    }
 }
