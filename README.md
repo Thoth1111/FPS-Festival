@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [FPS-Festival] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[your_project__name]** is a...
+**[FPS Festival]** is a mobile first webpage project showcasing details of an annual FPS gaming festival.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -99,9 +99,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Dynamic Featured Gamer Section]**
+- **[Functional Hamburger menu]**
+- **[Mobile first and responsive]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +111,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://thoth1111.github.io/FPS-Festival/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +121,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe how a new developer could make use of your project.
 
-To get a local copy up and running, follow these steps.
+To get a local copy up and running, clone or fork the repository.
 
 ### Prerequisites
 
@@ -137,7 +137,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder: https://github.com/Thoth1111/FPS-Festival
 
 <!--
 Example commands:
@@ -205,11 +205,11 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Alwyn Androvelle**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@thoth1111](https://github.com/thoth1111)
+- Twitter: [@androvelle](https://twitter.com/androvelle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/alwyn-androvelle-simiyu)
 
 👤 **Author2**
 
@@ -225,8 +225,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
+- [ ] **[transitions]**
+- [ ] **[animations]**
 - [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
