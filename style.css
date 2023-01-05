@@ -3,7 +3,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-/* ------------------------MOBILE VERSION-------------------------- */
+/* -------------------------MOBILE VERSION-------------------------- */
 
 @media only screen and (max-width: 768px){
     body {
@@ -354,12 +354,47 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        margin: 5% 0;
     }
 
     #features h3 {
         color:#43403f;
         font-family: 'Lato', sans-serif;
         font-size: 20px;        
+    }
+
+    .gamer-entry {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    #chess-bg {
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin: -15px -55px 0 0;
+    }
+
+    .gamer-entry img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .gamer-entry h4 {
+        color: #43403f;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        width: 200px;
+    }
+
+    .country {
+        color: #fb522d;
+        margin-top: 4px;
+        font-weight: bold;
     }
 
     #more-btn {
@@ -609,10 +644,61 @@
         display: none;
     }
 
+    #features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     #features h3 {
         color:#43403f;
         font-family: 'Lato', sans-serif;
         font-size: 20px;        
+    }
+
+    #gamers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 100%;
+        gap: 20px;
+        margin: 30px 0 50px 0;
+    }
+
+    .gamer-entry {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width:30%;
+        padding-left: 100px;
+        margin-bottom: 30px;
+    }
+
+    #chess-bg {
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin: -15px -65px 0 0;
+    }
+
+    .gamer-entry img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .gamer-entry h4 {
+        color: #43403f;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        width: 200px;
+    }
+
+    .country {
+        color: #fb522d;
+        margin-top: 4px;
+        font-weight: bold;
     }
 
     #more-btn {
