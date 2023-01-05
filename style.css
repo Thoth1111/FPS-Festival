@@ -1,810 +1,826 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 /* -------------------------MOBILE VERSION-------------------------- */
 
-@media only screen and (max-width: 768px){
-    body {
-        background-color: #f9f9f9;
-        width: 100%;
-    }
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #f9f9f9;
+    width: 100%;
+  }
 
-    #home-bg {
-        background-image: url(images/mobile-bg.png);
-        background-size: contain;
-    }
+  #home-bg {
+    background-image: url(images/mobile-bg.png);
+    background-size: contain;
+  }
 
-    header {
-        position: relative;
-        top: 0px;
-        margin-bottom: 50px;
-        background-color: #f3f2f1;
-    }
+  header {
+    position: relative;
+    top: 0;
+    margin-bottom: 50px;
+    background-color: #f3f2f1;
+  }
 
-    #hamburger {
-        cursor: pointer;
-        position: relative;
-        top: 20px;
-        left: 10px;
-    }
+  #hamburger {
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+    left: 10px;
+  }
 
-    #hamburger span {
-        display: block;
-        height: 6px;
-        background-color: #43403f;
-        width: 30px;
-    }
+  #home span,
+  #description span {
+    color: #fb522d;
+    padding: 10px;
+    line-height: 1;
+    font-size: 25px;
+    top: 25px;
+  }
 
-    #hamburger span:not(:last-child) {
-        margin-bottom: 6px;
-    }
+  #description span {
+    top: 10px;
+  }
 
-    #hamburger.active {
-        display: none;
-    }
+  #hamburger span {
+    display: block;
+    height: 6px;
+    background-color: #43403f;
+    width: 30px;
+  }
 
-    #nav1 {
-        display: none;
-    }
+  #hamburger span:not(:last-child) {
+    margin-bottom: 6px;
+  }
 
-    #nav2 {
-       position: fixed;
-       top: 0;
-       left: -300%;
-       width: 100%;
-       height: 100%;
-       background-color: rgba(211, 211, 211, 0.5);
-       transition: 0.5s;
-    }    
+  #hamburger.active {
+    display: none;
+  }
 
-    #nav2.active {
-        left: 0;
-        
-    }
+  #nav1 {
+    display: none;
+  }
 
-    #menu {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        z-index: 100;
-        gap: 30px;
-        margin: 0;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-        color: #fb522d;
-        background-color: #43403f;
-        border-radius: 10px;
-        overflow: hidden;      
-    }
+  #nav2 {
+    position: fixed;
+    top: 0;
+    left: -300%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 211, 211, 0.5);
+    transition: 0.5s;
+  }
 
-    #logo {
-        display: none;
-    }
+  #nav2.active {
+    left: 0;
+  }
 
-    #menu a{
-        text-decoration: none;
-        color:#fb522d;
-    }
+  #menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    gap: 30px;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: #fb522d;
+    background-color: #43403f;
+    border-radius: 10px;
+  }
 
-    #close-btn {
-        float: right;
-        padding: 32px 38px 0 0;
-        margin-left: 90%;
-    }
+  #logo {
+    display: none;
+  }
 
-    #description, #history {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  footer a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color: #43403f;
+  }
 
-    #about-bg {
-        background-image: url(images/about-bg.png);
-        background-size: contain;
-        background-color: #f3f2f1;
-    }
+  #menu a {
+    text-decoration: none;
+    color: #fb522d;
+  }
 
-    #home span, #description span {
-        color: #fb522d;
-        padding: 10px;
-        line-height: 1;
-        font-size: 25px;
-        top: 25px;
-    }
+  #close-btn {
+    float: right;
+    padding: 32px 38px 0 0;
+    margin-left: 90%;
+  }
 
-    #description span {
-        top: 10px;
-    }
+  #description,
+  #history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #home h1, #description h1 {
-        padding: 10px;
-        line-height: 1;
-        color: rgba(251, 82, 45, 1);
-        font-size: 40px;
-        margin: 20px 0 30px 0;
-        font-weight: 800;
-    }
+  #about-bg {
+    background-image: url(images/about-bg.png);
+    background-size: contain;
+    background-color: #f3f2f1;
+  }
 
-    #home h1 {
-        -webkit-background-clip: text;
-        background-clip: var(text);
-        background-image: url(images/Gaming-bg.jpg);
-        color: rgba(251, 82, 45, 0.8);
-    }
+  #home h1,
+  #description h1 {
+    padding: 10px;
+    line-height: 1;
+    color: rgba(251, 82, 45, 1);
+    font-size: 40px;
+    margin: 20px 0 30px 0;
+    font-weight: 800;
+  }
 
-    #description h1 {
-        background-color: #f3f2f1;
-        text-align: center;
-        margin-top: 5px;
-    }
+  #home h1 {
+    -webkit-background-clip: text;
+    background-clip: var(text);
+    background-image: url(images/Gaming-bg.jpg);
+    color: rgba(251, 82, 45, 0.8);
+  }
 
-    #description .separator {
-        display: none;
-    }
+  #description h1 {
+    background-color: #f3f2f1;
+    text-align: center;
+    margin-top: 5px;
+  }
 
-    #description p:first-child {
-        background-color: #f9f9f9;
-        border: 1px solid #d3d3d3;
-        padding: 15px;
-        margin: 0 5% 40px 5%;
-    }
+  .separator {
+    background-color: rgba(251, 82, 45, 0.7);
+    height: 2px;
+    width: 38px;
+    margin: -8px 0 30px 0;
+  }
 
-    #description p {
-      color: #43403f;
-      background-color: #f3f2f1;
-      text-align: center;
-      line-height: 1.5;
-      margin: 0 15%;
-      padding-bottom: 50px;
-    }
+  #description .separator {
+    display: none;
+  }
 
-    #description a {
-        color: #272a31;
-        font-weight: bold;
-    }
+  .pastlog {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
 
-    #history h3 {
-        color:#43403f;
-        font-size: 20px; 
-        margin-top: 30px;
-    }
+  .itinerary p {
+    width: 50%;
+    font-family: 'Lato', sans-serif;
+    color: #f9f9f9;
+  }
 
-    #logo-txt {
-        color: #43403f;
-        text-align: center;
-        margin: 0 10% 40px 10%;
-    }
+  .pastlog p {
+    position: relative;
+    bottom: 190px;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    line-height: 1;
+  }
 
-    #logo-2 {
-        border-radius: 50%;
-        width: 300px;
-        height: 300px;
-    }
+  #description p {
+    color: #43403f;
+    background-color: #f3f2f1;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0 15%;
+    padding-bottom: 50px;
+  }
 
-    #pastevents {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
+  #home p {
+    color: #43403f;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 40px 10px 0 10px;
+    font-family: 'Lato', sans-serif;
+    border: 4px solid #fff;
+  }
 
-    #pastevents h3 {
-        font-size: 30px;
-        margin-bottom: 5px;
-    }
-    
-    #pastevents h3, .pastlog p {
-        position: relative;
-        bottom: 190px;
-        color: #f9f9f9;
-        text-align: center;
-        padding: 8px;
-        font-weight: bold;
-        line-height: 1;
-    }
+  #description p:first-child {
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    padding: 15px;
+    margin: 0 5% 40px 5%;
+  }
 
-    .pastlog {
-        width: 300px;
-        height: 200px;
-        margin-bottom: 50px;
-    }
+  #description a {
+    color: #272a31;
+    font-weight: bold;
+  }
 
-    #first {
-        background-image: url(images/Past-Fest-2021.jpg);    
-    }
+  .itinerary h3 {
+    color: rgba(251, 82, 45, 1);
+    height: 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
 
-    .overlay {
-        width: 300px;
-        height: 200px;
-        padding: 0;
-        background: rgba(251, 82, 45, 0.7); 
-    }
+  .partners.about h3 {
+    color: darkgray;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
 
-    #second {
-        background-image: url(images/Past-Fest-2022.jpg);
-        background-size: contain;
-    }
+  #history h3 {
+    color: #43403f;
+    font-size: 20px;
+    margin-top: 30px;
+  }
 
-    .partners {
-        display: none;
-    }
+  #pastevents h3 {
+    position: relative;
+    bottom: 190px;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
 
-    .partners.about {
-        background-color:#272a31;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        margin: 0 -8px 0 -8px;
-    }
+  #logo-txt {
+    color: #43403f;
+    text-align: center;
+    margin: 0 10% 40px 10%;
+  }
 
-    .partners.about h3 {
-        color: darkgray;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-    }
+  #logo-2 {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+  }
 
-    .partners.about #partner-list {
-        display: flex;
-        gap: 80px;
-        justify-content: space-between;
-        margin: 30px 0 50px 0;
-    }
+  #pastevents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    .game-logo{
-        width: 50px;
-        height: 50px;
-    }
+  #first {
+    background-image: url(images/Past-Fest-2021.jpg);
+  }
 
-    #home p {
-        color: #43403f;
-        background-color: #f9f9f9;
-        padding: 15px;
-        margin:40px 10px 0 10px;
-        font-family: 'Lato', sans-serif;
-        border: 4px solid #ffffff;
-    }
+  .overlay {
+    width: 300px;
+    height: 200px;
+    padding: 0;
+    background: rgba(251, 82, 45, 0.7);
+  }
 
-    #home h2 {
-        color: #43403f;
-        font-family: 'Lato', sans-serif;
-        font-size: 30px;
-        text-align: center;
-        font-weight: 800;
-        margin-bottom: 70px;
-    }
+  #second {
+    background-image: url(images/Past-Fest-2022.jpg);
+    background-size: contain;
+  }
 
-    #home h4 {
-        color: #43403f;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        position: relative;
-        bottom: 70px;
-        right: 14px;
-    }
+  .partners {
+    display: none;
+  }
 
-    #about {
-        background-image: url(images/program-bg.jpg);
-        margin: 0 0 0 -7.5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-    }
+  .partners.about {
+    background-color: #272a31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 -8px 0 -8px;
+  }
 
-    #about-title {
-        color: #f9f9f9;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        padding-top: 25px;
-    }
+  .partners.about #partner-list {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    margin: 30px 0 50px 0;
+  }
 
-    .separator {
-        background-color: rgba(251, 82, 45, 0.7);
-        height: 2px;
-        width: 38px;
-        margin: -8px 0 30px 0;
-    }
+  .game-logo {
+    width: 50px;
+    height: 50px;
+  }
 
-    .itinerary {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-content: center;
-        background-color: rgba(255, 255, 255, 0.1);
-        width: 95%;
-        padding: 8px;
-        margin: 10px 0;     
-    }
+  #home h2 {
+    color: #43403f;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 70px;
+  }
 
-    .itinerary h3 {
-        color: rgba(251, 82, 45, 1);
-        height: 2px;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        padding-top: 20px;
-    }
+  .gamer-entry h4 {
+    color: #43403f;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+  }
 
-    .itinerary p {
-        width: 50%;
-        font-family: 'Lato', sans-serif;
-        color: #f9f9f9;
-    }
+  #home h4 {
+    color: #43403f;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 70px;
+    right: 14px;
+  }
 
-    #join-btn {
-        cursor: pointer;
-        background-color: #fb522d;
-        color: #f9f9f9;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        outline: none;
-        border: none;
-        width: 75%;
-        height: 100px;
-        margin: 40px 0;
-    }
+  #about {
+    background-image: url(images/program-bg.jpg);
+    margin: 0 0 0 -7.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+  }
 
-    #features {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin: 5% 0;
-    }
+  #about-title {
+    color: #f9f9f9;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 25px;
+  }
 
-    #features h3 {
-        color:#43403f;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;        
-    }
+  .itinerary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 95%;
+    padding: 8px;
+    margin: 10px 0;
+  }
 
-    .gamer-entry {
-        display: flex;
-        gap: 10px;
-        margin-top: 20px;
-        margin-bottom: 50px;
-    }
+  #join-btn {
+    cursor: pointer;
+    background-color: #fb522d;
+    color: #f9f9f9;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    width: 75%;
+    height: 100px;
+    margin: 40px 0;
+  }
 
-    #chess-bg {
-        width: 60px;
-        height: 60px;
-        float: left;
-        margin: -15px -55px 0 0;
-    }
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 0;
+  }
 
-    .gamer-entry img {
-        height: 120px;
-        width: 120px;
-    }
+  #features h3 {
+    color: #43403f;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
 
-    .gamer-entry h4 {
-        color: #43403f;
-        font-size: 20px;
-        padding: 0;
-        margin: 0;
-        width: 200px;
-    }
+  .gamer-entry {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
 
-    .country {
-        color: #fb522d;
-        margin-top: 4px;
-        font-weight: bold;
-    }
+  #chess-bg {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: -15px -55px 0 0;
+  }
 
-    #more-btn {
-        color: #43403f;
-        border-color: #43403f;
-        background-color: #f9f9f9;
-        width: 95%;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        white-space: nowrap;
-        padding: -8px 0 15px 0;
-        display: flex;
-        gap:10px;
-        justify-content: center;
-        align-content: center;
-        padding-top: 15px;
-        cursor: pointer;
-    }
+  .gamer-entry img {
+    height: 120px;
+    width: 120px;
+  }
 
-    #more-chevron {
-        margin-top: -9px;
-    }
+  .country {
+    color: #fb522d;
+    margin-top: 4px;
+    font-weight: bold;
+  }
 
-    footer {
-        margin: 4px 0 0 -8px;
-        padding: 20px;
-        color: #43403f;
-        text-align: center;
-        background-color: #f9f9f9;
-    }
+  #more-btn {
+    color: #43403f;
+    border-color: #43403f;
+    background-color: #f9f9f9;
+    width: 95%;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    white-space: nowrap;
+    padding: -8px 0 15px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15px;
+    cursor: pointer;
+  }
 
-    footer a{
-        font-family: 'Lato', sans-serif;
-        text-decoration: none;
-        color: #43403f;
-    }
+  #more-chevron {
+    margin-top: -9px;
+  }
 
+  footer {
+    margin: 4px 0 0 -8px;
+    padding: 20px;
+    color: #43403f;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
 }
 
-/* -------------------------DESKTOP VERSION-----------------------*/
+/* -------------------------DESKTOP VERSION----------------------- */
 
-@media only screen and (min-width: 768px){
-    #logo {
-        border-radius: 50%;
-        height: 70px;
-        width: 70px;
-        margin: 0 300px 0 200px;
-    }
+@media only screen and (min-width: 768px) {
+  #logo {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 0 300px 0 200px;
+  }
 
-    #nav1 {
-        display: flex;
-        justify-content: flex-end;
-        gap: 20px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 8px 120px 8px 8px;
-        background-color: #43403f;        
-    }
+  #nav1 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 120px 8px 8px;
+    background-color: #43403f;
+  }
 
-    #nav1 a {
-        font-family: 'Lato', sans-serif;
-        color: #f9f9f9;
-        text-decoration: none;
-    }
+  footer a {
+    color: #272a31;
+  }
 
-    #nav2 {
-        display: flex;
-        align-items: center;
-        margin-top: 35px;
-        padding: 5px 0 10px 0;
-        border-bottom: 1px solid rgba(211, 211, 211, 0.5);
-    }
+  #nav1 a {
+    font-family: 'Lato', sans-serif;
+    color: #f9f9f9;
+    text-decoration: none;
+  }
 
-    #menu {
-        display: flex;
-        flex-direction: row;
-        gap: 100px;
-    }
+  #nav2 {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+  }
 
-    #menu a {
-        text-decoration: none;
-        color: #85817f;
-        font-weight: 600;
-    }
+  #menu {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
 
-    #home {
-        background-image: url(images/mobile-bg.png);
-    }
+  #menu a {
+    text-decoration: none;
+    color: #85817f;
+    font-weight: 600;
+  }
 
-    #description, #history {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  #home {
+    background-image: url(images/mobile-bg.png);
+  }
 
-    #description {
-        background-image: url(images/about-bg.png);
-        background-size: contain;
-        background-color: #f3f2f1;
-        text-align: center;
-        padding-bottom: 50px;
-        border-bottom: 1px solid rgba(211, 211, 211, 0.5);
-    }
+  #description,
+  #history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #home span {
-        color: #fb522d;
-        position: relative;
-        padding: 10px;
-        line-height: 1;
-        font-size: 40px;
-        top: 130px;
-        left: 200px;
-    }
+  #description {
+    background-image: url(images/about-bg.png);
+    background-size: contain;
+    background-color: #f3f2f1;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+  }
 
-    #description span, #close-btn {
+  #home span {
+    color: #fb522d;
+    position: relative;
+    padding: 10px;
+    line-height: 1;
+    font-size: 40px;
+    top: 130px;
+    left: 200px;
+  }
+
+  #description span,
+  #close-btn {
     display: none;
-    }
+  }
 
-    #home h1, #description h1 {
-        -webkit-background-clip: text;
-        background-clip: var(text);
-        background-image: url(images/Gaming-bg.jpg);
-        color: rgba(251, 82, 45, 0.8);
-        padding: 10px;
-        line-height: 1;
-        font-size: 70px;
-        margin: 120px 350px 30px 200px;
-        font-weight: 800;
-    }
+  #home h1,
+  #description h1 {
+    -webkit-background-clip: text;
+    background-clip: var(text);
+    background-image: url(images/Gaming-bg.jpg);
+    color: rgba(251, 82, 45, 0.8);
+    padding: 10px;
+    line-height: 1;
+    font-size: 70px;
+    margin: 120px 350px 30px 200px;
+    font-weight: 800;
+  }
 
-    #description h1 {
-        background-color: #f3f2f1;
-    }
+  #description h1 {
+    background-color: #f3f2f1;
+  }
 
-    #description p:first-child {
-        background-color: #f9f9f9;
-        border: 1px solid #d3d3d3;
-        padding: 15px;
-        margin: 0 15% 40px 15%;
-    }
+  .itinerary p {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    color: #f9f9f9;
+  }
 
-    #description p {
-      color: #43403f;
-      line-height: 1.5;
-    }
+  .itinerary h3 {
+    color: rgba(251, 82, 45, 1);
+    height: 2px;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+  }
 
-    #description a {
-        color: #272a31;
-        font-weight: bold;
-        margin-bottom: 50px;
-    }
+  .partners h3 {
+    color: darkgray;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
 
-    #home p {
-        color: #43403f;
-        background-color: #f9f9f9;
-        padding: 15px;
-        margin:-8px 600px 0 200px;
-        font-family: 'Lato', sans-serif;
-        border: 4px solid #ffffff;
-    }
+  #history h3 {
+    color: #43403f;
+    font-size: 20px;
+    margin-top: 50px;
+  }
 
-    #home h2 {
-        color: #43403f;
-        font-family: 'Lato', sans-serif;
-        font-size: 40px;
-        font-weight: 800;
-        margin: 40px 0 0 205px;
-    }
+  #pastevents h3 {
+    position: relative;
+    bottom: 190px;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    line-height: 1;
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
 
-    #home h4 {
-        color: #43403f;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        margin: 0px 0 0 205px;
-        padding-bottom: 100px;;
-    }
+  .pastlog p {
+    position: relative;
+    bottom: 190px;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    line-height: 1;
+  }
 
-    #about {
-        background-image: url(images/program-bg.jpg);
-        margin: 0 0 0 -7.5px;
-        display: flex;
-        flex-direction: column;
-        /* gap: 2px; */
-        align-items: center;
-        right: 0;
-    }
+  #description p {
+    color: #43403f;
+    line-height: 1.5;
+  }
 
-    #about-title {
-        color: #f9f9f9;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        width: 100%;
-        text-align: center;
-        padding-top: 25px;
-    }
+  #home p {
+    color: #43403f;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: -8px 600px 0 200px;
+    font-family: 'Lato', sans-serif;
+    border: 4px solid #fff;
+  }
 
-    .separator {
-        background-color: rgba(251, 82, 45, 0.7);
-        height: 2px;
-        width: 38px;
-        margin: -8px 0 30px 0;
-    }
+  #description p:first-child {
+    background-color: #f9f9f9;
+    border: 1px solid #d3d3d3;
+    padding: 15px;
+    margin: 0 15% 40px 15%;
+  }
 
-    #desktop-itinerary {
-        display: flex;
-        flex-direction: row;
-        gap: 3px;
-        width: 80%;
-        margin-bottom: 100px;
-    }
+  #description a {
+    color: #272a31;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
 
-    .itinerary {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-content: center;
-        background-color: rgba(255, 255, 255, 0.1);
-        width: 20%;
-        padding: 8px;
-        margin: 10px 0;     
-    }
+  #home h2 {
+    color: #43403f;
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 40px 0 0 205px;
+  }
 
-    .itinerary img{
-        width: 50px;
-        height: 50px;
-        margin: 30px 0 -10px 36%;
-    }
+  .gamer-entry h4 {
+    color: #43403f;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+  }
 
-    .itinerary h3 {
-        color: rgba(251, 82, 45, 1);
-        height: 2px;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-        text-align: center;
-        padding-top: 20px;
-    }
+  #home h4 {
+    color: #43403f;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0 0 0 205px;
+    padding-bottom: 100px;
+  }
 
-    .itinerary p {
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        color: #f9f9f9;
-    }
+  #about {
+    background-image: url(images/program-bg.jpg);
+    margin: 0 0 0 -7.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 0;
+  }
 
-    #join-btn {
-        display: none;
-    }
+  #about-title {
+    color: #f9f9f9;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+  }
 
-    #features {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .separator {
+    background-color: rgba(251, 82, 45, 0.7);
+    height: 2px;
+    width: 38px;
+    margin: -8px 0 30px 0;
+  }
 
-    #features h3 {
-        color:#43403f;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;        
-    }
+  #desktop-itinerary {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    width: 80%;
+    margin-bottom: 100px;
+  }
 
-    #gamers {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: center;
-        width: 100%;
-        gap: 20px;
-        margin: 30px 0 50px 0;
-    }
+  .itinerary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 20%;
+    padding: 8px;
+    margin: 10px 0;
+  }
 
-    .gamer-entry {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        width:30%;
-        padding-left: 100px;
-        margin-bottom: 30px;
-    }
+  .itinerary img {
+    width: 50px;
+    height: 50px;
+    margin: 30px 0 -10px 36%;
+  }
 
-    #chess-bg {
-        width: 60px;
-        height: 60px;
-        float: left;
-        margin: -15px -65px 0 0;
-    }
+  #join-btn {
+    display: none;
+  }
 
-    .gamer-entry img {
-        width: 120px;
-        height: 120px;
-    }
+  #features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .gamer-entry h4 {
-        color: #43403f;
-        font-size: 20px;
-        padding: 0;
-        margin: 0;
-        width: 200px;
-    }
+  #features h3 {
+    color: #43403f;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
 
-    .country {
-        color: #fb522d;
-        margin-top: 4px;
-        font-weight: bold;
-    }
+  #gamers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+    gap: 20px;
+    margin: 30px 0 50px 0;
+  }
 
-    #more-btn {
-        display: none;
-    }
+  .gamer-entry {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 30%;
+    padding-left: 100px;
+    margin-bottom: 30px;
+  }
 
-    .partners.about {
-        display: none;
-    }
+  #chess-bg {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin: -15px -65px 0 0;
+  }
 
-    .partners {
-        background-color:#272a31;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+  .gamer-entry img {
+    width: 120px;
+    height: 120px;
+  }
 
-    .partners h3 {
-        color: darkgray;
-        font-family: 'Lato', sans-serif;
-        font-size: 20px;
-    }
+  .country {
+    color: #fb522d;
+    margin-top: 4px;
+    font-weight: bold;
+  }
 
-    #partner-list {
-        display: flex;
-        gap: 80px;
-        justify-content: space-between;
-        margin: 30px 0 50px 0;
-    }
+  #more-btn {
+    display: none;
+  }
 
-    .game-logo {
-        width: 50px;
-        height: 50px;
-    }
+  .partners.about {
+    display: none;
+  }
 
-    #history h3 {
-        color:#43403f;
-        font-size: 20px; 
-        margin-top: 50px;
-    }
+  .partners {
+    background-color: #272a31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-    #logo-txt {
-        color: #43403f;
-        text-align: center;
-        margin: 0 30% 40px 30%;
-    }
+  #partner-list {
+    display: flex;
+    gap: 80px;
+    justify-content: space-between;
+    margin: 30px 0 50px 0;
+  }
 
-    #logo-2 {
-        border-radius: 50%;
-    }
+  .game-logo {
+    width: 50px;
+    height: 50px;
+  }
 
-    #pastevents {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 20px;
-    }
+  #logo-txt {
+    color: #43403f;
+    text-align: center;
+    margin: 0 30% 40px 30%;
+  }
 
-    #pastevents h3, .pastlog p{
-        position: relative;
-        bottom: 190px;
-        color: #f9f9f9;
-        text-align: center;
-        padding: 8px;
-        font-weight: bold;
-        line-height: 1;
-    }
+  #logo-2 {
+    border-radius: 50%;
+  }
 
-    #pastevents h3 {
-        font-size: 30px;
-        margin-bottom: 5px;
-    }
+  #pastevents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
 
-    .pastlog {
-        width: 300px;
-        height: 200px;
-        margin-bottom: 50px;
-    }
+  .pastlog {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+  }
 
-    #first {
-        background-image: url(images/Past-Fest-2021.jpg);    
-    }
+  #first {
+    background-image: url(images/Past-Fest-2021.jpg);
+  }
 
-    .overlay {
-        width: 300px;
-        height: 200px;
-        padding: 0;
-        background: rgba(251, 82, 45, 0.7); 
-    }
+  .overlay {
+    width: 300px;
+    height: 200px;
+    padding: 0;
+    background: rgba(251, 82, 45, 0.7);
+  }
 
-    #second {
-        background-image: url(images/Past-Fest-2022.jpg);
-        background-size: contain;
-    }
+  #second {
+    background-image: url(images/Past-Fest-2022.jpg);
+    background-size: contain;
+  }
 
-    footer {
-        padding: 50px 20px;
-        background-color: lightgray;
-        border: 1px solid rgba(211, 211, 211, 0.8);
-        font-family: 'Lato', sans-serif;
-        text-decoration: none;
-        text-align: center;
-    }
-
-    footer a{
-        color:#272a31;
-    }
+  footer {
+    padding: 50px 20px;
+    background-color: lightgray;
+    border: 1px solid rgba(211, 211, 211, 0.8);
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    text-align: center;
+  }
 }
