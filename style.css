@@ -24,20 +24,75 @@
     }
 
     #hamburger {
+        cursor: pointer;
         position: relative;
         top: 20px;
         left: 10px;
     }
 
-    .bar {
+    #hamburger span {
+        display: block;
         height: 6px;
-        margin: 6px 0;
         background-color: #43403f;
         width: 30px;
     }
 
-    #nav1, #nav2 {
+    #hamburger span:not(:last-child) {
+        margin-bottom: 6px;
+    }
+
+    #hamburger.active {
         display: none;
+    }
+
+    #nav1 {
+        display: none;
+    }
+
+    #nav2 {
+       position: fixed;
+       top: 0;
+       left: -300%;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(211, 211, 211, 0.5);
+       transition: 0.5s;
+    }    
+
+    #nav2.active {
+        left: 0;
+        
+    }
+
+    #menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        gap: 30px;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        color: #fb522d;
+        background-color: #43403f;
+        border-radius: 10px;
+        overflow: hidden;      
+    }
+
+    #logo {
+        display: none;
+    }
+
+    #menu a{
+        text-decoration: none;
+        color:#fb522d;
+    }
+
+    #close-btn {
+        float: right;
+        padding: 32px 38px 0 0;
+        margin-left: 90%;
     }
 
     #description, #history {
@@ -56,7 +111,6 @@
         color: #fb522d;
         padding: 10px;
         line-height: 1;
-        position: relative;
         font-size: 25px;
         top: 25px;
     }
@@ -136,8 +190,13 @@
         justify-content: center;
         gap: 20px;
     }
+
+    #pastevents h3 {
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
     
-    .pastlog p, #pastevents h3 {
+    #pastevents h3, .pastlog p {
         position: relative;
         bottom: 190px;
         color: #f9f9f9;
@@ -145,11 +204,6 @@
         padding: 8px;
         font-weight: bold;
         line-height: 1;
-    }
-
-    #pastevents h3 {
-        font-size: 30px;
-        margin-bottom: 5px;
     }
 
     .pastlog {
@@ -318,6 +372,7 @@
         white-space: nowrap;
         padding: -8px 0 15px 0;
         display: flex;
+        gap:10px;
         justify-content: center;
         align-content: center;
         padding-top: 15px;
@@ -325,8 +380,7 @@
     }
 
     #more-chevron {
-        position: relative;
-        bottom: 8px;
+        margin-top: -9px;
     }
 
     footer {
@@ -422,7 +476,7 @@
         left: 200px;
     }
 
-    #description span {
+    #description span, #close-btn {
     display: none;
     }
 
