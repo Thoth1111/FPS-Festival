@@ -15,7 +15,7 @@ closer.addEventListener('click', () => {
 const featured = [
   {
     name: 'Pat Wach',
-    image: 'images/pat-Wach.jpg',
+    image: 'images/Queen-Arrow.jpg',
     country: 'Kenya',
     expertise: 'Call of Duty',
   },
