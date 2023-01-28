@@ -29,7 +29,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [FPS-Festival] <a name="about-project"></a>
+# 📖 FPS-Festival <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
@@ -195,9 +195,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[transitions]**
-- [ ] **[animations]**
-- [ ] **[new_feature_3]**
+-  **[transitions]**
+-  **[animations]**
+-  **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
