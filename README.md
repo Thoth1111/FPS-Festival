@@ -31,16 +31,12 @@
 
 # 📖 FPS-Festival <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[FPS Festival]** is a mobile first webpage project showcasing details of an annual FPS gaming festival.
 https://www.loom.com/share/df0aae09a45f4930a467de2c835e1a7d
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -67,8 +63,6 @@ https://www.loom.com/share/df0aae09a45f4930a467de2c835e1a7d
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[Dynamic Featured Gamer Section]**
 - **[Functional Hamburger menu]**
 - **[Mobile first and responsive]**
@@ -79,8 +73,6 @@ https://www.loom.com/share/df0aae09a45f4930a467de2c835e1a7d
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://thoth1111.github.io/FPS-Festival/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -89,13 +81,9 @@ https://www.loom.com/share/df0aae09a45f4930a467de2c835e1a7d
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, clone or fork the repository.
 
 ### Prerequisites
-
-In order to run this project you need:
 
 <!--
 Example command:
@@ -120,8 +108,6 @@ Example commands:
 
 ### Install
 
-Install this project with:
-
 <!--
 Example command:
 
@@ -133,8 +119,6 @@ Example command:
 
 ### Usage
 
-To run the project, execute the following command:
-
 <!--
 Example command:
 
@@ -145,8 +129,6 @@ Example command:
 
 ### Run tests
 
-To run tests, run the following command:
-
 <!--
 Example command:
 
@@ -156,8 +138,6 @@ Example command:
 --->
 
 ### Deployment
-
-You can deploy this project using:
 
 <!--
 Example:
@@ -173,19 +153,11 @@ Example:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Alwyn Androvelle**
 
 - GitHub: [@thoth1111](https://github.com/thoth1111)
 - Twitter: [@androvelle](https://twitter.com/androvelle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/alwyn-androvelle-simiyu)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -193,11 +165,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
--  **[transitions]**
--  **[animations]**
--  **[new_feature_3]**
+-  **transitions**
+-  **animations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,7 +176,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Thoth1111/FPS-Festival/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -215,9 +184,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project and have some proposed ideas, please feel free to reach out.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,9 +192,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank Microverse for the training required in putting this project together
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -235,15 +200,6 @@ I would like to thank...
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
